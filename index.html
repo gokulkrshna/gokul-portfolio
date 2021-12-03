@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gokul Krishna | Software Developer</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <header class="header" role="banner" id="top">
+        <div class="row">
+          <nav class="nav" role="navigation">
+            <ul class="nav_items">
+              <li class="nav_item"><a href="#home" class="nav_link">Home</a></li>
+              <li class="nav_item"><a href="#about" class="nav_link">About-Me</a></li>
+              <li class="nav_item"><a href="#designs" class="nav_link">My-Designs</a>
+              <li class="nav_item"><a href="#contact" class="nav_link">Contact-me</a></li>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__text-box row" id="home">
+          <div class="header__text">
+              <p class="header_greeting">
+                  Hi, I'm
+              </p>
+            <h1 class="heading-primary">
+              <span>Gokul Krishna</span>
+            </h1>
+            <p>Full-stack Developer</p>
+            <ul class="header_tech_stack">
+                <li class="tech_skill">Java (Spring Boot)</li>
+                <li class="tech_skill">Python</li>
+                <li class="tech_skill">ReactJS</li>
+            </ul>
+            <!-- <a href="#contact" class="btn btn--pink">Get in touch</a> -->
+          </div>
+        </div>
+      </header>
+      <main role="main">
+        <section class="about" id="about">
+            <div class="row">
+              <h2>About Me</h2>
+              <div class="about_data">
+                <div class="about_text">
+                  <p>
+                    Hi,
+                    I'm a software developer based in Bengaluru, India. I have worked on products from scratch 
+                    and eventually scaled it up to 1000+ users per day.
+                  </p>
+                  <!-- <a href="#" class="btn">My Resume</a> -->
+                </div>
+      
+                <div class="about_photo-container">
+                  <img class="about__photo" src="./images/gokul_photo.jpeg" alt="" />
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="designs" id="designs">
+            <div class="row">
+              <h2>My Designs</h2>
+              <div class="design_template_container">
+                <div class="design_image">
+                  <img class = "design_img" src="./images/designs/mc_pp2.png"/>
+                </div>
+                <div class="design_image">
+                  <img class = "design_img" src="./images/designs/shiva_circle.jpeg"/>
+                </div>
+                <div class="design_image">
+                  <img class = "design_img" src="./images/designs/pet_care_basic1.png"/>
+                </div>
+                <div class="design_image">
+                  <img class = "design_img" src="./images/designs/image3839.png"/>
+                </div>
+                </div>
+              </div>
+          </section>
+          <section class="contact" id="contact">
+            <div class="row">
+              <h2>Contact Me</h2>
+              <div class="contact_container">
+                <form id="contact_form" onsubmit="onSubmitOps();return false;" action="">
+
+                  <label class="form_label" for="fname">Name</label>
+                  <input type="text" required=true id="fname" name="firstname" placeholder="Your name.." onkeyup="validateForm()">
+              
+                  <label class="form_label" for="email">E-mail</label>
+                  <input type="email" required=true id="email" name="email" placeholder="Your e-mail.." onkeyup="validateForm()">
+              
+                  <label class="form_label" for="subject">Subject</label>
+                  <textarea id="subject" required=true name="subject" placeholder="Describe your query.." style="height:200px" onkeyup="validateForm()"></textarea>
+              
+                  <input type="submit" id="submit_btn" disabled value="Submit">
+                </form>
+              </div>
+            </div>
+          </section>
+      </main>
+</body>
+</html>
